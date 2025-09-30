@@ -14,7 +14,7 @@ class ErrorBoundary extends React.Component {
 
     componentDidCatch(error, errorInfo) {
         this.setState({ error, errorInfo });
-        
+
         // Log error to external service in production
         if (process.env.NODE_ENV === 'production') {
             this.logErrorToService(error, errorInfo);
@@ -36,9 +36,9 @@ class ErrorBoundary extends React.Component {
                     transition={{ duration: 0.4, ease: "easeOut" }}
                 >
                     <div className="error-content">
-                        <motion.div 
+                        <motion.div
                             className="error-icon"
-                            animate={{ 
+                            animate={{
                                 rotate: [0, -10, 10, 0],
                                 scale: [1, 1.1, 1]
                             }}
@@ -46,7 +46,7 @@ class ErrorBoundary extends React.Component {
                         >
                             🌿💔
                         </motion.div>
-                        
+
                         <motion.h1
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -54,7 +54,7 @@ class ErrorBoundary extends React.Component {
                         >
                             Oops! Something went wrong
                         </motion.h1>
-                        
+
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -64,7 +64,7 @@ class ErrorBoundary extends React.Component {
                             Don't worry - your data is safe!
                         </motion.p>
 
-                        <motion.div 
+                        <motion.div
                             className="error-actions"
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}

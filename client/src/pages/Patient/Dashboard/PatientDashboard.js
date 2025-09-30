@@ -4,16 +4,16 @@ import { Link } from 'react-router-dom';
 import { useAuth } from '../../../contexts/AuthContext';
 import { useNotifications } from '../../../contexts/NotificationContext';
 import AyurvedaMap from '../../../components/Map/AyurvedaMap';
-import { 
-  LoadingSpinner, 
-  Card, 
-  StatCard, 
-  Button, 
+import {
+  LoadingSpinner,
+  Card,
+  StatCard,
+  Button,
   Container,
   Grid,
   Section,
   containerVariants,
-  itemVariants 
+  itemVariants
 } from '../../../components/UI';
 import './PatientDashboard.css';
 
