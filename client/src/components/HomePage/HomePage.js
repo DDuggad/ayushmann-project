@@ -2,24 +2,14 @@ import React from 'react';
 import { Navigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
 import LandingPage from '../../pages/LandingPage/LandingPage';
-import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
+import { PageLoader } from '../UI';
 
 const HomePage = () => {
     const { isAuthenticated, user, loading } = useAuth();
 
     // Show loading spinner while checking authentication
     if (loading) {
-        return (
-            <div style={{
-                minHeight: '100vh',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                background: 'linear-gradient(135deg, var(--neutral-cream) 0%, var(--primary-50) 100%)'
-            }}>
-                <LoadingSpinner message="Loading AyushMann..." />
-            </div>
-        );
+        return <PageLoader message="Loading AyushMann..." />;
     }
 
     // If user is authenticated, redirect to their dashboard

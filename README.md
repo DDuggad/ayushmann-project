@@ -1,223 +1,442 @@
-# 🌿 AyushMann - Panchakarma Patient Management System# AyushMann - Panchakarma Patient Management Suite
+# 🌿 AyushMann - Panchakarma Management Suite# 🌿 AyushMann - Panchakarma Patient Management System# AyushMann - Panchakarma Patient Management Suite
 
 
 
-<div align="center">A comprehensive HealthTech solution for Ayurvedic Panchakarma centers, featuring AI-powered scheduling, real-time progress tracking, and dual-portal system for patients and practitioners.
+<div align="center">
 
 
 
-![AyushMann Logo](https://img.shields.io/badge/AyushMann-Ayurvedic%20Care%20Management-87a96b?style=for-the-badge&logo=leaf)## 🌿 Features
+![AyushMann Banner](https://img.shields.io/badge/AyushMann-Healthcare%20Management-87a96b?style=for-the-badge&logo=leaf)<div align="center">A comprehensive HealthTech solution for Ayurvedic Panchakarma centers, featuring AI-powered scheduling, real-time progress tracking, and dual-portal system for patients and practitioners.
 
 
+
+**A modern, comprehensive healthcare platform for Ayurvedic Panchakarma treatment management**
+
+
+
+[![React](https://img.shields.io/badge/React-18.2-61DAFB?style=flat-square&logo=react)](https://reactjs.org/)![AyushMann Logo](https://img.shields.io/badge/AyushMann-Ayurvedic%20Care%20Management-87a96b?style=for-the-badge&logo=leaf)## 🌿 Features
+
+[![Node.js](https://img.shields.io/badge/Node.js-Express-339933?style=flat-square&logo=nodedotjs)](https://nodejs.org/)
+
+[![MongoDB](https://img.shields.io/badge/MongoDB-Database-47A248?style=flat-square&logo=mongodb)](https://mongodb.com/)
+
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
 **Modern Digital Healthcare Platform for Ayurvedic Panchakarma Treatment Management**- **Dual Portal System**: Separate interfaces for patients and practitioners
 
+[🚀 Quick Start](#-quick-start) • [✨ Features](#-features) • [📖 Demo](#-demo) • [🏗️ Architecture](#%EF%B8%8F-architecture)
+
 - **Smart Scheduling Engine**: AI-powered therapy scheduling and resource management
+
+</div>
 
 [![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=flat-square&logo=react)](https://reactjs.org/)- **Real-time Progress Tracking**: Live updates on treatment progress
 
+---
+
 [![Node.js](https://img.shields.io/badge/Node.js-Express-339933?style=flat-square&logo=nodedotjs)](https://nodejs.org/)- **Multi-channel Notifications**: SMS, email, and in-app notifications
+
+## ✨ Features
 
 [![MongoDB](https://img.shields.io/badge/MongoDB-Database-47A248?style=flat-square&logo=mongodb)](https://mongodb.com/)- **AI Communication**: Local language support and voice transcription
 
-[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)- **HIPAA Compliant**: End-to-end encryption and secure data handling
+🧘‍♀️ **Dual Portal System** - Separate interfaces for patients and practitioners  
+
+📊 **Smart Dashboard** - Real-time progress tracking and analytics  [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)- **HIPAA Compliant**: End-to-end encryption and secure data handling
+
+🗺️ **Location Services** - Find nearby Ayurveda clinics and stores  
+
+🔔 **Notifications** - Multi-channel alerts and reminders  
+
+📱 **Mobile Optimized** - Responsive design for all devices  
+
+🔐 **Secure Auth** - Role-based access with JWT authentication  [Demo](#-demo) • [Features](#-features) • [Quick Start](#-quick-start) • [Contributing](#-contributing)## 🚀 Quick Start
+
+🎨 **Beautiful UI** - Modern Ayurvedic-inspired design  
 
 
 
-[Demo](#-demo) • [Features](#-features) • [Quick Start](#-quick-start) • [Contributing](#-contributing)## 🚀 Quick Start
-
-
+---
 
 </div>### Prerequisites
 
+## 🚀 Quick Start
+
 - **Node.js** (v16+): [Download here](https://nodejs.org/)
 
----- **MongoDB** (v5.0+): [Download here](https://www.mongodb.com/try/download/community) or use [MongoDB Atlas](https://www.mongodb.com/atlas)
+### **One-Click Setup (Windows)**
+
+```powershell---- **MongoDB** (v5.0+): [Download here](https://www.mongodb.com/try/download/community) or use [MongoDB Atlas](https://www.mongodb.com/atlas)
+
+# Method 1: PowerShell Script (Recommended)
+
+.\start-ayushmann.ps1
 
 
 
-## 📖 Overview### Installation Steps
+# Method 2: Batch File## 📖 Overview### Installation Steps
+
+start-ayushmann.bat
+
+```
 
 
 
-**AyushMann** is a comprehensive digital healthcare platform designed specifically for **Panchakarma treatment management**. It bridges the gap between traditional Ayurvedic practices and modern technology, providing seamless communication between patients and practitioners while maintaining the authentic essence of Ayurvedic care.1. **Install Dependencies**
+### **Manual Setup****AyushMann** is a comprehensive digital healthcare platform designed specifically for **Panchakarma treatment management**. It bridges the gap between traditional Ayurvedic practices and modern technology, providing seamless communication between patients and practitioners while maintaining the authentic essence of Ayurvedic care.1. **Install Dependencies**
 
-   ```bash
+```bash
 
-### 🎯 Mission   npm run install-deps
+# 1. Install dependencies   ```bash
 
-To modernize Ayurvedic healthcare delivery through intelligent scheduling, real-time progress tracking, and culturally-sensitive patient management solutions.   ```
+npm install
+
+cd server && npm install && cd ../client && npm install### 🎯 Mission   npm run install-deps
 
 
+
+# 2. Set environment variablesTo modernize Ayurvedic healthcare delivery through intelligent scheduling, real-time progress tracking, and culturally-sensitive patient management solutions.   ```
+
+cd ../server
+
+cp .env.example .env
+
+# Edit .env with your MongoDB connection
 
 ---2. **Start MongoDB** (if using local installation)
 
-   ```bash
+# 3. Start the application
+
+# Terminal 1 - Backend   ```bash
+
+cd server && npm start
 
 ## ✨ Features   # Windows (run as Administrator)
 
-   net start MongoDB
+# Terminal 2 - Frontend  
+
+cd client && npm start   net start MongoDB
+
+```
 
 ### 🏥 **For Healthcare Practitioners**   
 
-- **Smart Scheduling**: AI-powered appointment management with conflict detection   # macOS (with Homebrew)
+### **Access Points**
 
-- **Patient Portal**: Comprehensive patient history and treatment tracking   brew services start mongodb/brew/mongodb-community
+- 🌐 **Frontend**: http://localhost:3000- **Smart Scheduling**: AI-powered appointment management with conflict detection   # macOS (with Homebrew)
+
+- 🔧 **Backend**: http://localhost:5000
+
+- 📧 **Demo Patient**: `patient@demo.com` / `demo123`- **Patient Portal**: Comprehensive patient history and treatment tracking   brew services start mongodb/brew/mongodb-community
+
+- 👩‍⚕️ **Demo Practitioner**: `doctor@demo.com` / `demo123`
 
 - **Progress Analytics**: Visual insights into treatment effectiveness   
 
+---
+
 - **Multi-language Support**: Hindi, English, and regional language support   # Linux
+
+## 📖 Demo
 
 - **HIPAA Compliance**: Enterprise-grade security for patient data   sudo systemctl start mongod
 
-   ```
+### **Patient Portal**
 
-### 🧘‍♀️ **For Patients**
+- 📊 Personal health dashboard   ```
 
-- **Treatment Tracking**: Real-time progress monitoring with visual indicators3. **Start Development Server**
+- 📅 Appointment scheduling
 
-- **Smart Notifications**: SMS, email, and in-app reminders in preferred language   ```bash
+- 🗺️ Find nearby Ayurveda centers### 🧘‍♀️ **For Patients**
 
-- **Clinic Finder**: Interactive map to find nearby Ayurveda centers and stores   npm run dev
+- 📈 Treatment progress tracking
 
-- **Appointment Management**: Easy booking and rescheduling capabilities   ```
+- 💬 Communication with practitioners- **Treatment Tracking**: Real-time progress monitoring with visual indicators3. **Start Development Server**
+
+
+
+### **Practitioner Portal**- **Smart Notifications**: SMS, email, and in-app reminders in preferred language   ```bash
+
+- 👥 Patient management system
+
+- 📋 Treatment planning tools- **Clinic Finder**: Interactive map to find nearby Ayurveda centers and stores   npm run dev
+
+- 📊 Practice analytics
+
+- 💼 Schedule management- **Appointment Management**: Easy booking and rescheduling capabilities   ```
+
+- 📝 Digital prescriptions
 
 - **Educational Content**: Personalized Ayurvedic wellness tips and guidance
 
+---
+
 4. **Access the Application**
+
+## 🏗️ Architecture
 
 ### 🗺️ **Interactive Map Features**   - Frontend: http://localhost:3000
 
-- **Location-based Search**: Find nearby Ayurveda clinics and herbal stores   - Backend: http://localhost:5000
+```
 
-- **Filtering Options**: Search by clinic type, distance, and specialties   - Health Check: http://localhost:5000/health
+AyushMann/- **Location-based Search**: Find nearby Ayurveda clinics and herbal stores   - Backend: http://localhost:5000
 
-- **Ratings & Reviews**: Community-driven feedback system
+├── 🎨 client/                 # React Frontend
 
-- **Directions Integration**: One-click Google Maps navigation### Alternative: Frontend-Only Development
+│   ├── src/- **Filtering Options**: Search by clinic type, distance, and specialties   - Health Check: http://localhost:5000/health
 
-- **Contact Integration**: Direct calling and messaging capabilities
+│   │   ├── components/        # Reusable UI components
 
-If you don't have MongoDB set up, you can still run the frontend:
+│   │   │   ├── UI/           # Unified component library- **Ratings & Reviews**: Community-driven feedback system
 
-### 🔧 **Technical Highlights**```bash
+│   │   │   ├── Navigation/   # App navigation
 
-- **Responsive Design**: Mobile-first approach optimized for all devicescd client
+│   │   │   ├── Map/          # Location services- **Directions Integration**: One-click Google Maps navigation### Alternative: Frontend-Only Development
 
-- **Real-time Updates**: WebSocket integration for live notificationsnpm start
+│   │   │   └── ErrorBoundary/ # Error handling
 
-- **Modern UI/UX**: Ayurvedic-inspired design with smooth animations```
+│   │   ├── pages/            # Route-specific pages- **Contact Integration**: Direct calling and messaging capabilities
 
-- **Error Handling**: Comprehensive error boundaries and fallback mechanisms
+│   │   │   ├── Auth/         # Login/Register
 
-The backend will start in development mode without database connection, allowing you to work on the UI.
+│   │   │   ├── Patient/      # Patient portalIf you don't have MongoDB set up, you can still run the frontend:
 
----
+│   │   │   └── Practitioner/ # Doctor portal
 
-## 📱 Mobile Optimized
+│   │   └── contexts/         # React Context providers### 🔧 **Technical Highlights**```bash
 
-## 🚀 Quick Start
+│   └── package.json
+
+│- **Responsive Design**: Mobile-first approach optimized for all devicescd client
+
+├── 🔧 server/                 # Node.js Backend  
+
+│   ├── routes/               # API endpoints- **Real-time Updates**: WebSocket integration for live notificationsnpm start
+
+│   ├── models/               # MongoDB schemas
+
+│   ├── middleware/           # Express middleware- **Modern UI/UX**: Ayurvedic-inspired design with smooth animations```
+
+│   └── server.js
+
+│- **Error Handling**: Comprehensive error boundaries and fallback mechanisms
+
+└── 📄 Docs & Config          # Setup and documentation
+
+```The backend will start in development mode without database connection, allowing you to work on the UI.
+
+
+
+### **Tech Stack**---
+
+
+
+**Frontend:** React 18.2, Framer Motion, CSS3, HTML5  ## 📱 Mobile Optimized
+
+**Backend:** Node.js, Express.js, MongoDB, JWT, Socket.io  
+
+**Tools:** Git, npm, PowerShell scripts  ## 🚀 Quick Start
+
+**Design:** Ayurvedic-inspired UI with sage green & terracotta colors  
 
 Designed with mobile-first approach, optimized for Android devices with responsive design and touch-friendly interfaces.
 
+---
+
 ### Prerequisites
+
+## 🎨 Design Philosophy
 
 - **Node.js** 16+ ## 🎨 Design Theme
 
+**Sophisticated blend of Authentic Ayurvedic, Modern, and Minimalistic design**
+
 - **MongoDB** (local or cloud)
 
-- **npm** or **yarn**Sophisticated blend of Authentic Ayurvedic, Modern, and Minimalistic design with:
+- 🎨 **Color Palette**: Calming sage green (#87a96b) and warm terracotta (#ec7439)
 
-- Calming sage green and terracotta color palette
+- 🔤 **Typography**: Clean Inter font with Crimson Text accents- **npm** or **yarn**Sophisticated blend of Authentic Ayurvedic, Modern, and Minimalistic design with:
+
+- ✨ **Animations**: Smooth Framer Motion transitions
+
+- 📱 **Responsive**: Mobile-first design principles- Calming sage green and terracotta color palette
+
+- 🧘 **Mindful UX**: Intuitive navigation reflecting Ayurvedic harmony
 
 ### Installation- Clean typography with Inter font family
 
+---
+
 - Subtle animations and smooth transitions
+
+## 🔧 Development
 
 1. **Clone the repository**- Minimalist UI with ample white space
 
-   ```bash
+### **Available Scripts**
 
-   git clone https://github.com/yourusername/ayushmann-project.git## 🏗️ Tech Stack
+```bash   ```bash
 
-   cd ayushmann-project
+npm start           # Start both frontend and backend
+
+npm run client      # Start React development server   git clone https://github.com/yourusername/ayushmann-project.git## 🏗️ Tech Stack
+
+npm run server      # Start Node.js API server
+
+npm run build       # Build for production   cd ayushmann-project
+
+```
 
    ```- **Frontend**: React.js, CSS3, HTML5
 
-- **Backend**: Node.js, Express.js
+### **Environment Variables**
 
-2. **Install dependencies**- **Database**: MongoDB
+```env- **Backend**: Node.js, Express.js
 
-   ```bash- **Authentication**: OAuth 2.0
+MONGODB_URI=mongodb://localhost:27017/ayushmann
 
-   # Install all dependencies (root, server, client)- **Cloud**: AWS/Firebase
+JWT_SECRET=your_secret_key_here2. **Install dependencies**- **Database**: MongoDB
 
-   npm run install-deps- **AI/ML**: TensorFlow, Scikit-learn
+PORT=5000
 
-   ```
+NODE_ENV=development   ```bash- **Authentication**: OAuth 2.0
 
-## 📂 Project Structure
+CLIENT_URL=http://localhost:3000
 
-3. **Environment Setup**
+```   # Install all dependencies (root, server, client)- **Cloud**: AWS/Firebase
 
-   ```bash```
+
+
+---   npm run install-deps- **AI/ML**: TensorFlow, Scikit-learn
+
+
+
+## 🛠️ Troubleshooting   ```
+
+
+
+### **Common Issues**## 📂 Project Structure
+
+
+
+**Port conflicts:** `Get-NetTCPConnection -LocalPort 3000,5000` to check ports  3. **Environment Setup**
+
+**MongoDB errors:** Ensure MongoDB is running or use Atlas connection  
+
+**Dependencies:** Run `npm install` in root, server, and client directories     ```bash```
+
+**Demo login:** POST to `/api/auth/seed-demo` to create demo users  
 
    # Copy environment template (if available)ayushmann-project/
 
-   cp server/.env.example server/.env├── client/          # React frontend
+### **Reset Everything**
 
-   ├── server/          # Node.js backend
+```powershell   cp server/.env.example server/.env├── client/          # React frontend
 
-   # Or create .env file in server/ directory with:├── shared/          # Shared utilities
+# Nuclear option - complete reset
 
-   # MONGODB_URI=mongodb://localhost:27017/ayushmann└── docs/           # Documentation
+Remove-Item -Recurse -Force node_modules, client\node_modules, server\node_modules   ├── server/          # Node.js backend
 
-   # JWT_SECRET=your_secret_key_here```
+npm install && cd server && npm install && cd ../client && npm install
 
-   # PORT=5000
-
-   ```## 🔐 Security
+```   # Or create .env file in server/ directory with:├── shared/          # Shared utilities
 
 
 
-4. **Start the application**- AES-256 encryption
+---   # MONGODB_URI=mongodb://localhost:27017/ayushmann└── docs/           # Documentation
 
-   ```bash- TLS/SSL protocols
 
-   # Method 1: Start both frontend and backend together- HIPAA compliance
+
+## 🤝 Contributing   # JWT_SECRET=your_secret_key_here```
+
+
+
+1. **Fork** the repository   # PORT=5000
+
+2. **Create** a feature branch: `git checkout -b feature/amazing-feature`
+
+3. **Commit** changes: `git commit -m 'Add amazing feature'`   ```## 🔐 Security
+
+4. **Push** to branch: `git push origin feature/amazing-feature`
+
+5. **Open** a Pull Request
+
+
+
+### **Code Standards**4. **Start the application**- AES-256 encryption
+
+- ✅ Use ES6+ JavaScript features
+
+- ✅ Follow React Hooks patterns   ```bash- TLS/SSL protocols
+
+- ✅ Maintain responsive design
+
+- ✅ Write semantic, accessible HTML   # Method 1: Start both frontend and backend together- HIPAA compliance
+
+- ✅ Add meaningful comments
 
    npm start- OAuth 2.0 authentication
 
+---
+
    - Role-based access control
+
+## 📞 Support & Links
 
    # Method 2: Start individually
 
-   # Terminal 1 - Backend:## 📞 Support
+### **Quick Links**
 
-   cd server && npm start
+- 🐛 **Issues**: [GitHub Issues](https://github.com/DDuggad/ayushmann-project/issues)   # Terminal 1 - Backend:## 📞 Support
 
-   For support and questions, please contact the AyushMann development team.
+- 📚 **Documentation**: See `TROUBLESHOOTING.md`
 
-   # Terminal 2 - Frontend:
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/DDuggad/ayushmann-project/discussions)   cd server && npm start
 
-   cd client && npm start---
+
+
+### **API Endpoints**   For support and questions, please contact the AyushMann development team.
+
+- `POST /api/auth/login` - User authentication
+
+- `POST /api/auth/register` - User registration   # Terminal 2 - Frontend:
+
+- `POST /api/auth/seed-demo` - Create demo users
+
+- `GET /api/dashboard/patient` - Patient dashboard data   cd client && npm start---
+
+- `GET /api/dashboard/practitioner` - Practitioner dashboard data
 
    ```
-
-*Built for Smart India Hackathon 2025 - HealthTech Category*
-5. **Seed demo data**
-   ```powershell
-   # Create demo users (Windows PowerShell)
-   Invoke-RestMethod -Uri "http://localhost:5000/api/auth/seed-demo" -Method POST -ContentType "application/json"
-   ```
-
-### 🌐 Access Points
-- **Frontend**: http://localhost:3000
-- **Backend API**: http://localhost:5000
 
 ---
 
-## 🎮 Demo
+*Built for Smart India Hackathon 2025 - HealthTech Category*
+
+## 📄 License5. **Seed demo data**
+
+   ```powershell
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.   # Create demo users (Windows PowerShell)
+
+   Invoke-RestMethod -Uri "http://localhost:5000/api/auth/seed-demo" -Method POST -ContentType "application/json"
+
+---   ```
+
+
+
+<div align="center">### 🌐 Access Points
+
+- **Frontend**: http://localhost:3000
+
+**Built with ❤️ for Smart India Hackathon 2025**- **Backend API**: http://localhost:5000
+
+
+
+🌿 *Bridging ancient Ayurvedic wisdom with modern technology* 🌿---
+
+
+
+</div>## 🎮 Demo
 
 ### Demo Credentials
 Try the application with these pre-configured accounts:

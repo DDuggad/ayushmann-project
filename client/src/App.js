@@ -2,14 +2,21 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-// Components
+// Unified Components
+import { pageVariants } from './components/UI';
+import './components/UI/styles.css';
+
+// Core Components
 import Navigation from './components/Navigation/Navigation';
 import HomePage from './components/HomePage/HomePage';
+import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
+import './components/ErrorBoundary/ErrorBoundary.css';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+
+// Pages
 import LandingPage from './pages/LandingPage/LandingPage';
 import Login from './pages/Auth/Login';
 import Register from './pages/Auth/Register';
-import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
-import './components/ErrorBoundary/ErrorBoundary.css';
 import PatientDashboard from './pages/Patient/Dashboard/PatientDashboard';
 import PractitionerDashboard from './pages/Practitioner/Dashboard/PractitionerDashboard';
 import PatientSchedule from './pages/Patient/Schedule/PatientSchedule';
@@ -18,33 +25,10 @@ import PractitionerSchedule from './pages/Practitioner/Schedule/PractitionerSche
 import PractitionerPatients from './pages/Practitioner/Patients/PractitionerPatients';
 import BookingSystem from './pages/Booking/BookingSystem';
 import NotificationCenter from './pages/Notifications/NotificationCenter';
-import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+
+// Context Providers
 import { AuthProvider } from './contexts/AuthContext';
 import { NotificationProvider } from './contexts/NotificationContext';
-
-// Page transition variants
-const pageVariants = {
-  initial: {
-    opacity: 0,
-    y: 20
-  },
-  animate: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.3,
-      ease: "easeOut"
-    }
-  },
-  exit: {
-    opacity: 0,
-    y: -20,
-    transition: {
-      duration: 0.2,
-      ease: "easeIn"
-    }
-  }
-};
 
 function App() {
   return (
