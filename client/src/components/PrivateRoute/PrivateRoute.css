@@ -1,0 +1,58 @@
+/* Private Route Loading Styles */
+
+.private-route-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, var(--primary-50) 0%, var(--accent-50) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loading-container {
+  text-align: center;
+  background: var(--neutral-white);
+  padding: var(--space-8);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  max-width: 300px;
+  width: 90%;
+}
+
+.loading-spinner {
+  margin-bottom: var(--space-4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner-leaf {
+  font-size: 3rem;
+  animation: leafSpin 1.5s ease-in-out infinite;
+  filter: drop-shadow(0 4px 8px rgba(135, 169, 107, 0.3));
+}
+
+@keyframes leafSpin {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(180deg) scale(1.1);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+.loading-container p {
+  color: var(--neutral-600);
+  font-weight: var(--fw-medium);
+  margin: 0;
+  font-size: var(--fs-base);
+}

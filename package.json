@@ -1,0 +1,21 @@
+{
+  "name": "ayushmann-project",
+  "version": "1.0.0",
+  "description": "AyushMann - Panchakarma Patient Management and Therapy Scheduling Software",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm start",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server:dev\" \"npm run client\"",
+    "server:dev": "cd server && npm run dev",
+    "build": "cd client && npm run build",
+    "install-deps": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": ["ayurveda", "panchakarma", "healthcare", "scheduling", "patient-management"],
+  "author": "AyushMann Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
